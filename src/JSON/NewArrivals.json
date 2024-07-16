@@ -1,0 +1,33 @@
+[
+    {
+      "pic": "/media/s1.jpg",
+      "name": "New Microfiber Towels",
+      "price": 1300
+    },
+    {
+      "pic": "/media/s2.jpg",
+      "name": "New Detailing Brushes",
+      "price": 3900
+    },
+    {
+      "pic": "/media/s3.jpg",
+      "name": "New Polishing Pads",
+      "price": 1700
+    },
+    {
+      "pic": "/media/s4.jpg",
+      "name": "New Detailing Swabs",
+      "price": 2500
+    },
+    {
+      "pic": "/media/s5.jpg",
+      "name": "New Detailing Sponges",
+      "price": 1200
+    },
+    {
+      "pic": "/media/s6.jpg",
+      "name": "New Drying Towels",
+      "price": 1100
+    }
+  ]
+  

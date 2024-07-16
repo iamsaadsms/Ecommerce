@@ -1,0 +1,17 @@
+/* Home.css */
+.best-sellers-cart {
+    position: absolute;
+    bottom: 12.35vh;
+    left: 1.10vw;
+    right: 0;
+    width: 20vw;
+  }
+  
+  .new-arrivals-cart {
+    position: absolute;
+    bottom: 12.25vh;
+    left: 0.8vw;
+    right: 0;
+    width: 28vw;
+  }
+  

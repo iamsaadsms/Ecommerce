@@ -1,0 +1,113 @@
+/* .NewArrivals {
+    margin-top: 15vh;
+    margin-bottom: 10vh; 
+    margin-right: 8vw;
+    margin-left: 8vw;  
+}
+
+.new-img-splide {
+    width: 25vw;
+    height: 70vh;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .splide {
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+  }
+  
+  .new-head {
+    font-size: 6.5vh;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.25vw;
+  }
+  
+  .new-head {
+    margin-bottom: 10vh;
+  }
+  
+  .new-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    font-family: "Merriweather", serif;
+  }
+  
+  .new-name {
+    font-size: 3vh;
+    letter-spacing: 0.05vw;
+    cursor: pointer;
+    margin-top: 0.5vh;
+  }
+  
+  .new-name:hover {
+    color: rgb(14, 99, 18);
+  }
+  
+  .new-price {
+    font-size: 2.5vh;
+    letter-spacing: 0.15vw;
+    color: rgba(75, 74, 74, 0.9);
+    padding-top: 1vh;
+    cursor: pointer;
+  }
+  
+  .new-price:hover {
+    color: rgb(160, 119, 17);
+  }
+  
+  .splide__slide {
+    padding: 0;
+    position: relative; /* Ensure position relative for absolute positioning */
+  }
+  
+  .splide__list {
+    margin: 0;
+  }
+  
+  .new-add-to-cart {
+    position: absolute;
+    bottom: 9.75vh;
+    left: 1.30vw;
+    right: 0;
+    height: 0;
+    overflow: hidden;
+    background: rgba(70, 70, 70, 0.9);
+    transition: 0.3s ease-in-out;
+    width: 25vw;
+    cursor: pointer;
+  }
+  
+  .splide__slide:hover .new-add-to-cart {
+    height: 6vh; /* Adjust the height as needed */
+    padding-top: 2vh;
+  }
+  
+  .new-cart {
+    color: rgba(255, 255, 255);
+    font-size: 2.75vh;
+    text-align: center;
+    letter-spacing: 0.15vw;
+  }
+  
+  .splide__arrow {
+    background-color: rgba(255, 255, 255, 0.8); /* Example background color */
+    border: none; /* Example: remove border */
+    border-radius: 50%; /* Example: make it round */
+    color: #333; /* Example: text color */
+    font-size: 2rem; /* Example: adjust size */
+    padding: 0.5rem; /* Example: adjust padding */
+    position: absolute; /* Example: position */
+    top: 50%; /* Example: center vertically */
+    transform: translateY(-50%); /* Example: center vertically */
+  }
+  
+  .splide__arrow--prev {
+    left: 2rem; /* Example: adjust position */
+  }
+  
+  .splide__arrow--next {
+    right: 1rem; /* Example: adjust position */
+  } */
