@@ -1,20 +1,47 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Navbar from "../Common/Navbar";
 import Slider from "./Slider";
 import BestSellers from "../Common/BestSellers";
-import BSellers from '../JSON/BestSellers.json';
-import NewArrivals from '../JSON/NewArrivals.json';
+import BSellers from '../JSON/BestSellers.json'; // Example JSON data structure
+import NArrivals from '../JSON/NewArrivals.json'; // Example JSON data structure
 import HomeImage from "./HomeImage";
 import Footer from "../Common/Footer";
 
+// Import all images from the media folder
+const importAll = (r) => {
+  let images = {};
+  r.keys().forEach((item) => { images[item.replace('./', '')] = r(item); });
+  return images;
+}
+
+const images = importAll(require.context('../Media', false, /\.(png|jpe?g|svg)$/));
+
 const Home = () => {
-  const BestSellerCartStyle = {
+  const [bestSellers, setBestSellers] = useState([]);
+  const [newArrivals, setNewArrivals] = useState([]);
+
+  useEffect(() => {
+    const bestSellersWithImages = BSellers.map(item => ({
+      ...item,
+      pic: images[item.pic],
+    }));
+
+    const newArrivalsWithImages = BSellers.map(item => ({
+      ...item,
+      pic: images[item.pic],
+    }));
+
+    setBestSellers(bestSellersWithImages);
+    setNewArrivals(newArrivalsWithImages);
+  }, []);
+
+  const bestSellerCartStyle = {
     width: '20vw',
     height: '60vh'
   };
 
-  const NewArrivalsCartStyle = {
+  const newArrivalsCartStyle = {
     width: '28vw',
     height: '70vh'
   };
@@ -23,9 +50,9 @@ const Home = () => {
     <div className="Home">
       <Navbar />
       <Slider />
-      <BestSellers imgs={NewArrivals} perPage={3} head="NEW ARRIVALS" className="new-arrivals-cart" style={NewArrivalsCartStyle} />
+      <BestSellers imgs={newArrivals} perPage={3} head="NEW ARRIVALS" className="new-arrivals-cart" style={newArrivalsCartStyle} />
       <HomeImage />
-      <BestSellers imgs={BSellers} perPage={4} head="EXPLORE BEST SELLERS" className="best-sellers-cart" style={BestSellerCartStyle} />
+      <BestSellers imgs={bestSellers} perPage={4} head="EXPLORE BEST SELLERS" className="best-sellers-cart" style={bestSellerCartStyle} />
       <Footer />
     </div>
   );

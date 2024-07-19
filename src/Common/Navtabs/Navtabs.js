@@ -1,23 +1,19 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import './Navtabs.css';
 
 const Navtabs = () => {
     const tabs = [
-        {
-            title: "Home"
-        },
-        {
-            title: "New Arrivals"
-        },
+        { title: "Home", link: "/" },
+        { title: "New Arrivals", link: "/new-arrivals" },
         {
             title: {
                 drop: "Products",
                 items: ["Oil", "Brushes", "Polish", "Paint"]
-            }
+            },
+            link: "/products"
         },
-        {
-            title: "Sale"
-        }
+        { title: "Sale", link: "/sale" }
     ];
 
     return (
@@ -25,7 +21,9 @@ const Navtabs = () => {
             {tabs.map((tab, index) => (
                 <div className="tab" key={index}>
                     {typeof tab.title === "string" ? (
-                        <span className="nav-tab">{tab.title}</span>
+                        <Link to={tab.link} className="nav-tab">
+                            {tab.title}
+                        </Link>
                     ) : (
                         <div className="dropdown">
                             <span className="nav-tab dropdown-title">{tab.title.drop}</span>

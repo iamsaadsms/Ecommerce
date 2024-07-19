@@ -29,6 +29,10 @@
     border-right: 1px solid rgb(255, 255, 255);
 }
 
+.social-links {
+    border-left: 1px solid rgb(255, 255, 255);
+}
+
 .bluepexel, .copy {
     font-size: 2vh;
     letter-spacing: 0.1vw;
