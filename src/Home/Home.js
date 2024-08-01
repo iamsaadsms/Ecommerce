@@ -42,9 +42,10 @@ const Home = () => {
   };
 
   const newArrivalsCartStyle = {
-    width: '28vw',
+    width: '26vw',
     height: '70vh'
   };
+
 
   return (
     <div className="Home">

@@ -59,13 +59,15 @@ const Slider = () => {
         <div className="cd-slider" onMouseEnter={() => setAutoUpdate(false)} onMouseLeave={() => setAutoUpdate(true)}>
             <ul>
                 {slides.map((slide, index) => (
+                    <>
                     <li key={index} className={index === current ? 'current' : index === (current === 0 ? slides.length - 1 : current - 1) ? 'prev_slide' : ''}>
                         <div className="image" style={{ backgroundImage: `url(${slide.image})` }}></div>
-                        <Button data={slide.data} style={style} />
                         <div className="content">
                             <h2>{slide.title}</h2>
                         </div>
                     </li>
+                    <Button data={slide.data} style={style} />
+                    </>
                 ))}
             </ul>
             {slides.length > 1 && (

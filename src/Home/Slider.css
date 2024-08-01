@@ -97,8 +97,8 @@ header li a {
     width: 100%;
     height: 100%;
     visibility: hidden;
-    transition: visibility 0s 1s;
-    will-change: visibility;
+    transition: visibility 1s 1s ease-in-out;
+    will-change: visibility ;
 }
 
 .image {
@@ -110,7 +110,7 @@ header li a {
     background-size: cover;
     background-position: 50% 50%;
     clip: rect(0, 80rem, 50rem, 80rem);
-    transition: clip .5s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
+    transition: clip 1s cubic-bezier(0.99, 0.01, 0.45, 0.9) .5s;
     will-change: clip;
 }
 

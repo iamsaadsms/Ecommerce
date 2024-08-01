@@ -30,7 +30,7 @@ const Footer = () => {
             </div>
             <div className="create">
                 <span className="bluepexel">CREATED BY</span>
-                <a className="bluepexel"> BLUEPEXEL.</a>
+                <a className="bluepexel"> BACKTREQ.</a>
             </div>
         </>
     )
