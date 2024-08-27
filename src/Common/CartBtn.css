@@ -6,6 +6,7 @@
   cursor: pointer;
   text-align: center;
   width: 28vw;
+  z-index: 1001; 
 }
 
 .slick-slide:hover .add-to-cart {
@@ -21,12 +22,17 @@
   letter-spacing: 0.1vw;
 }
 
-
 .CartBtn {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); 
-  z-index: 10; 
-} 
+  z-index: 100; /* Increased z-index to ensure visibility */
+  background-color: rgba(255, 0, 0, 0.5); /* Red background for visibility */
+  width: 100px;
+  height: 50px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
 
+}

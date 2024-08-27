@@ -3,6 +3,7 @@
   top: 64vh;
   left: 0;
   right: 0;
+  z-index: 11; 
 }
 
 .new-arrivals-cart {
@@ -10,4 +11,5 @@
   top: 64vh;
   left: 0;
   right: 0;
+  z-index: 11; 
 }

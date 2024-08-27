@@ -52,7 +52,7 @@ const BestSellers = ({ imgs, perPage, head, className, style }) => {
           {imgs.map((item, idx) => (
             <div key={idx} style={{ position: 'relative' }} className='slick-slide'>
               <img src={item.pic} alt={item.pic} className='img-splide' style={style} />
-              <CartBtn img={item.pic} name={item.name} price={item.price} onAddToCart={addToCartHandler} className={className} style={{position:"absolute"}}/>
+              <CartBtn img={item.pic} name={item.name} price={item.price} onAddToCart={addToCartHandler} className={className} style={{position:"absolute", zIndex:"11"}}/>
               <div className='details'>
                 <span className='name'>{item.name}</span>
                 <span className='price'>RS {item.price.toFixed(2)}</span>
